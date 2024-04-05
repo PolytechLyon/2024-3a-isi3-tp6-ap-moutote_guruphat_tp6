@@ -41,6 +41,8 @@ Il suffit de centraliser la partie commune (construction du message) au niveau d
 
 ## Exercices 6
 
+Dans le cas présent, la différence entre une frabique statique et le singleton et que, même si la fabrication d'une instance est statique, le singleton ne fabrique qu'une seule et unique instance contrairement à la fabrique qui en construit plusieurs.
+
 ## Exercices 7
 
 ## Exercices 8
