@@ -14,6 +14,13 @@ On ne doit pas modifier la méthode car le type de stockage est abstrait par la 
 
 ## Exercices 3
 
+La réalisation de ce pattern est composée de trois étapes :
+- d'abord, il faut rendre le constructeur privé afin de bloquer l'instanciation de la classe
+- ensuite, il faut créer une fonction `getInstance()` qui possède deux cas de figure :
+    - si l'objet n'a jamais été instancié, il est instancié et stocké dans une propriété static
+    - si l'objet a déjà été instancié, il est retourné
+- enfin, il faut remplacer les appels au constructeur par des appels à la méthdoe `getInstance()`
+
 ## Exercices 4
 
 ## Exercices 5
