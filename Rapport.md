@@ -51,4 +51,8 @@ Ainsi, pour utiliser ce décorateur, il faut appeller le constructeur avec une i
 
 ## Exercices 8
 
+La classe `Contexte` suit le patron itérateur.
+
+Oui, il est possible d'avoir plusieurs lignes dans le fichier. Chaque ligne correspondra à une nouvelle instance. Ainsi, dans la méthode `inject()`, un nouvel objet sera créé pour chaque ligne en correspondance avec la classe indiquée. Cependant, nous n'utilisons que la première instance (car nous retournons seulement le premier élément de l'itérateur).
+
 ## Exercices 9
