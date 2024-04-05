@@ -16,4 +16,8 @@ public abstract class NamedLogger implements Logger {
         this.name = name;
     }
 
+    protected String getMessage(String format, Object... args){
+        String entry = String.format(format, args);
+        return String.format("%s\t%s\n", this.name, entry);
+    }
 }

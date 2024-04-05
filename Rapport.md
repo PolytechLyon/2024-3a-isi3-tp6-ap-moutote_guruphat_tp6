@@ -37,6 +37,8 @@ Pour casser la dépendance, il nous suffit donc d'utiliser l'abstraction de `Bik
 
 ## Exercices 5
 
+Il suffit de centraliser la partie commune (construction du message) au niveau de la classe parent pour éviter la duplication du code.
+
 ## Exercices 6
 
 ## Exercices 7

@@ -20,8 +20,7 @@ public class FileLogger extends NamedLogger {
 
     @Override
     synchronized public void log(String format, Object... args) {
-        String entry = String.format(format, args);
-        String message = String.format("%s\t%s\n", this.name, entry);
+        String message = this.getMessage(format, args);
         try (FileWriter fileWriter = new FileWriter(FILE_NAME, true)) {
             fileWriter.write(message);
         } catch (IOException e) {
