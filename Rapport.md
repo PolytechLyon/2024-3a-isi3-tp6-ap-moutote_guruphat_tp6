@@ -23,6 +23,18 @@ La réalisation de ce pattern est composée de trois étapes :
 
 ## Exercices 4
 
+Non, les classes `Wheel` et `Bike` n'appartiennent pas au même package.
+
+`Bike` hérite de `Vehicle` et `Wheel` utilise un `Bike`. 
+
+Il y a une relation d'interdépendance, donc si les deux packages se trouvaient dans un module différent, ils ne seraient pas possible d'instancier un objet `Bike` (car il est impossible de choisir un ordre d'instanciation pour les objets interdépedants).
+
+Cette dépendance n'adhère donc pas aux bonnes pratiques de conception.
+
+`Wheel` utilise la méthode `getPush()` de la classe `Bike`. Il existe une abstraction dans `Vehicle`, qui se trouve dans le package transport.
+
+Pour casser la dépendance, il nous suffit donc d'utiliser l'abstraction de `Bike` dans `Wheel`. Ainsi, `Wheel` n'utilisera que des classes du même package.
+
 ## Exercices 5
 
 ## Exercices 6
