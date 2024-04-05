@@ -8,6 +8,9 @@ Le patron de conception mis en oeuvre et le design pattern Composite car chaque 
 Pour la création de la classe `TagAlongBike`, il n'est pas nécessaire de réécrire la méthode `getVelocity` et `getMass` car le vélo est un composant `MobileComponent`.
 
 ## Exercices 2
+La méthode `getVelocity()` utilise le patron de conception Iterateur. Ce patron permet d'avoir plus de contrôle sur le parcours des objets de la liste et d'abstraire la façon dont sont stockées les données.
+
+On ne doit pas modifier la méthode car le type de stockage est abstrait par la création de l'itérateur. Ainsi, lors de la création de l'itérateur, le résultat sera la même, donc il suffit de change le type.
 
 ## Exercices 3
 
