@@ -56,3 +56,8 @@ La classe `Contexte` suit le patron itérateur.
 Oui, il est possible d'avoir plusieurs lignes dans le fichier. Chaque ligne correspondra à une nouvelle instance. Ainsi, dans la méthode `inject()`, un nouvel objet sera créé pour chaque ligne en correspondance avec la classe indiquée. Cependant, nous n'utilisons que la première instance (car nous retournons seulement le premier élément de l'itérateur).
 
 ## Exercices 9
+
+La méthode `load(klass)` va elle-même récupérer les classes d'implémentation de `klass`, donc tous les éléments présents dans l'itérateur correspondent à la classe `klass` demandée.
+
+Dans `injectAll`, on peut donc directement retourner l'itérateur sur les classes d'implémentation trouvées.
+Pour faire la simulation sur tous les vélos (implémentations de `Bike`), il suffit donc d'itérer sur le retour de `injectAll(Bike.class)`. Cependant une ligne dupliquée dans le fichier de configuration seront ignorées et l'absence de lignes impliquera un itérateur vide.
