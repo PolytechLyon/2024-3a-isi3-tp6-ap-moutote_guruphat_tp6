@@ -3,6 +3,9 @@
 Noms des étudiants du binôme :
 
 ## Exercices 1
+Le patron de conception mis en oeuvre et le design pattern Composite car chaque élément `MobileObject` du vélo représente un composant et le vélo `Vehicle` lui même représente en composant également.
+
+Pour la création de la classe `TagAlongBike`, il n'est pas nécessaire de réécrire la méthode `getVelocity` et `getMass` car le vélo est un composant `MobileComponent`.
 
 ## Exercices 2
 
@@ -18,4 +21,4 @@ Noms des étudiants du binôme :
 
 ## Exercices 8
 
-
+## Exercices 9
