@@ -45,6 +45,10 @@ Dans le cas présent, la différence entre une frabique statique et le singleton
 
 ## Exercices 7
 
+Pour répondre à ce besoin, nous avons créé un décorateur qui possède une méthode log et une propriété de type `Logger`. Dans l'appel à la méthode `log()`, nous générons une nouvelle `String` contenant la date et nous l'injectons dans le format avant d'appeler la fonction du logger concret injecté lors de la construction.
+
+Ainsi, pour utiliser ce décorateur, il faut appeller le constructeur avec une instance d'un des enfants concrets de `Logger`.
+
 ## Exercices 8
 
 ## Exercices 9
