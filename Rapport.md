@@ -1,6 +1,6 @@
 # Compte Rendu du TP 1 : Patrons de Conceptions
 
-Noms des étudiants du binôme :
+Noms des étudiants du binôme : GURUPHAT Nicolas & MOUTOTE Grégory
 
 ## Exercices 1
 Le patron de conception mis en oeuvre et le design pattern Composite car chaque élément `MobileObject` du vélo représente un composant et le vélo `Vehicle` lui même représente en composant également.
